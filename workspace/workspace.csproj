@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="media\resources\gamedev\weapon.json" />
+    <Content Include="media\audio\gamedev\bg_menu.ogg" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
