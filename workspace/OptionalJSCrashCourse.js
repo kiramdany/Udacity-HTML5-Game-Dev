@@ -9,7 +9,7 @@
 //
 // Note that this is an actual Javascript object, whereas
 // JSON is a string that represents that object.
-var Ex1 = {}
+var Ex1 = {}; 
 Ex1.JSONExample = {
     "frames": {
         "chaingun.png": {
@@ -104,18 +104,20 @@ Ex1.parseJSON = function (weaponJSON) {
 //    Exercise 2
 //*/
 
+var Ex2 = {};
 
-
-parseJSON = function (weaponJSON) {
+Ex2.parseJSON = function (weaponJSON) {
     parsedJSON = JSON.parse(weaponJSON);
 
     return parsedJSON['frames']['chaingun_impact.png']['spriteSourceSize']['x'];
 };
 
-var setup = function () {
+Ex2.setup = function () {
+   
     // Create a new XMLHttpRequest object
     //
     // YOUR CODE HERE
+    var xhr = new XMLHttpRequest();
 
 
     // then use its open method to to define the request that
@@ -131,12 +133,13 @@ var setup = function () {
     //
     // YOUR CODE HERE
 
+    xhr.open("GET", "/media/resources/gamedev/weapon.json", true);
 
 
     // After that, we want to define the onload method
     // of the request to be our parsing function from
     // before. We've included that code above for
-    // reference. A few things to keep in mind here:
+    // reference. A few things to keep in mind here 
     //
     // 1) This function can't take any parameters.
     // 2) Instead of parsing 'weaponJSON', we'll need
@@ -148,10 +151,14 @@ var setup = function () {
 
     // YOUR CODE HERE
 
-
+    xhr.onload = (function () {
+        var parsedJSON = JSON.parse(xhr.responseText);
+        console.log(parsedJSON);
+    });
 
     // Finally, we want to call the send method of the
     // request object to actually send the request.
     //
     // YOUR CODE HERE
+    xhr.send();
 };
