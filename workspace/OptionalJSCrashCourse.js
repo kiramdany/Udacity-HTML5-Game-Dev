@@ -349,3 +349,57 @@ Ex5.manipulateDOM = function () {
     body.appendChild(div);
 
 };
+
+///*
+// Exercise 5
+//*/
+
+Ex5 = {};
+
+// Create an inheritance tree using Class.extend() of the
+// following form:
+//
+// 1) Weapon should extend Class.
+//
+// 2) MachineGun should extend Weapon.
+//
+// 3) ChainGun should extend Weapon.
+//
+// 4) Entity should extend Class.
+//
+// 5) Teleporter should extend Entity.
+//
+// 6) EnergyCanister should extend Entity.
+//
+// We've started things off for you by doing steps
+// (1) and (2).
+
+Ex5.Weapon = Class.extend({
+    init: function () {
+
+    }
+});
+
+Ex5.MachineGun = Ex5.Weapon.extend({
+    init: function () {
+
+    }
+});
+
+// YOUR CODE HERE
+
+Ex5.ChainGun = Ex5.Weapon.extend({
+    init: function () { }
+});
+
+Ex5.Entity = Class.extend({
+    init: function () { }
+});
+
+Ex5.Teleporter = Ex5.Entity.extend({
+    init: function () { }
+});
+
+Ex5.EnergyCanister = Ex5.Entity.extend({
+    init: function () { }
+});
