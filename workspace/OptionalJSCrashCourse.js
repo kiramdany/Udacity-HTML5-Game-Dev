@@ -9,8 +9,8 @@
 //
 // Note that this is an actual Javascript object, whereas
 // JSON is a string that represents that object.
-
-JSONExample = {
+var Ex1 = {}
+Ex1.JSONExample = {
     "frames": {
         "chaingun.png": {
             "frame": {
@@ -75,7 +75,7 @@ JSONExample = {
     }
 };
 
-var JSONString = JSON.stringify(JSONExample);
+Ex1.JSONString = JSON.stringify(Ex1.JSONExample);
 
 // The above is an example of how the JSON would be structured.
 // Note that chaingun_impact.png is not here, we'll call your
@@ -83,7 +83,7 @@ var JSONString = JSON.stringify(JSONExample);
 //
 // Note also that the above is an actual Javascript object, whereas
 // JSON is a string that represents that object.
-function parseJSON (weaponJSON) {
+Ex1.parseJSON = function (weaponJSON) {
     // First, use the JSON.parse function to
     // parse the passed in weaponJSON.
     //
