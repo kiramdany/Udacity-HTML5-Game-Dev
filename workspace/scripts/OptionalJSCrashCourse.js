@@ -351,10 +351,10 @@ Ex5.manipulateDOM = function () {
 };
 
 ///*
-// Exercise 5
+// Exercise 6
 //*/
 
-Ex5 = {};
+Ex6 = {};
 
 // Create an inheritance tree using Class.extend() of the
 // following form:
@@ -374,13 +374,13 @@ Ex5 = {};
 // We've started things off for you by doing steps
 // (1) and (2).
 
-Ex5.Weapon = Class.extend({
+Ex6.Weapon = Class.extend({
     init: function () {
 
     }
 });
 
-Ex5.MachineGun = Ex5.Weapon.extend({
+Ex6.MachineGun = Ex6.Weapon.extend({
     init: function () {
 
     }
@@ -388,18 +388,18 @@ Ex5.MachineGun = Ex5.Weapon.extend({
 
 // YOUR CODE HERE
 
-Ex5.ChainGun = Ex5.Weapon.extend({
+Ex6.ChainGun = Ex6.Weapon.extend({
     init: function () { }
 });
 
-Ex5.Entity = Class.extend({
+Ex6.Entity = Class.extend({
     init: function () { }
 });
 
-Ex5.Teleporter = Ex5.Entity.extend({
+Ex6.Teleporter = Ex6.Entity.extend({
     init: function () { }
 });
 
-Ex5.EnergyCanister = Ex5.Entity.extend({
+Ex6.EnergyCanister = Ex6.Entity.extend({
     init: function () { }
 });

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <ul>
+        <li><button onclick="Ex1.parseJSON(Ex1.JSONString)">Ex1: Navigate JSON</button></li>
+        <li><button onclick="Ex2.setup()">Ex2: xhr</button></li>
+        <li> <button onclick="Ex3.setup()">Ex3: xhr, responseType arraybuffer</button></li>
+        <li><button onclick="Ex4.xhrGet('../media/resources/gamedev/weapon.json', Ex4.parseJSON); Ex4.xhrGet('../media/audio/gamedev/bg_menu.ogg', Ex4.playSound, 'arraybuffer')">Ex4: general xhr function</button></li>
+        <li><button onclick="Ex5.manipulateDOM()">Ex5: Manipulate DOM</button></li>
+        <li><button onclick="location.href = '../scripts/OptionalJSCrashCourse.js'">Ex6: view javascript file </button></li>
+    </ul>
+
+    <audio controls="controls">
+        <source src="https://www.udacity.com/media/js/standalone/libs/gamedev_assets/bg_menu.ogg" type="audio/ogg" />
+    </audio>
+
+     <script src="../scripts/core.js"></script>
+    <script src="../scripts/OptionalJSCrashCourse.js"></script>
+</body>
+</html>
+
