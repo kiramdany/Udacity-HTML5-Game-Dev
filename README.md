@@ -14,7 +14,7 @@ I may set up git from the console to manage further commits
 
 Sections:
 - Optional Javascript Crash Course
-    Buttons in index.html execute the code written from the corresponding exercise. For most this just writes a message 
-    to console to test that the code is working.
+    - Buttons in index.html execute the code written from the corresponding exercise
+    - For most these, this just writes a message to console to test that the code is working.
 
 - Canvas 
